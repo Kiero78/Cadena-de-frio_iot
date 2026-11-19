@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Barra Superior de Marca y Sesión Activa -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.CadenaDeFrio.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            app:contentPadding="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_cold_chain_logo" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/titulo_dashboard"
+                            android:textColor="@color/primary_navy"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/subtitulo_dashboard"
+                            android:textColor="@color/text_muted"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCerrarSesion"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:padding="0dp"
+                        android:text="Salir"
+                        android:textColor="@color/temp_critical"
+                        android:textSize="13sp"
+                        app:icon="@drawable/ic_logout"
+                        app:iconSize="16dp"
+                        app:iconTint="@color/temp_critical" />
+                </LinearLayout>
+
+                <!-- Chip de Sesión y Rol Operativo -->
+                <TextView
+                    android:id="@+id/tvUsuarioActivo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_pill"
+                    android:backgroundTint="@color/primary_light_frost"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="6dp"
+                    android:text="Sesión activa"
+                    android:textColor="@color/primary_navy"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Banner de Estado de Enlace / Conexión -->
+        <TextView
+            android:id="@+id/tvEstadoEnlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_pill"
+            android:backgroundTint="#E8EEF3"
+            android:elevation="1dp"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="10dp"
+            android:text="ENLACE: ESPERANDO CONEXIÓN WI-FI O BLUETOOTH..."
+            android:textAlignment="center"
+            android:textColor="@color/text_body"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <!-- Tarjeta de Canales de Conectividad OT -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.CadenaDeFrio.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Canales de Conectividad"
+                    android:textColor="@color/primary_navy"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <!-- Enlace Wi-Fi -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="IP Nodo Wi-Fi (ej. 192.168.1.50)"
+                        app:boxCornerRadiusBottomEnd="8dp"
+                        app:boxCornerRadiusBottomStart="8dp"
+                        app:boxCornerRadiusTopEnd="8dp"
+                        app:boxCornerRadiusTopStart="8dp"
+                        app:startIconDrawable="@drawable/ic_wifi"
+                        app:startIconTint="@color/primary_blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etIpNodo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"
+                            android:textSize="13sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnConectar"
+                        style="@style/Widget.CadenaDeFrio.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="8dp"
+                        android:text="Wi-Fi"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <!-- Botones Bluetooth y Emisor -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnBluetooth"
+                        style="@style/Widget.CadenaDeFrio.Button.Outlined"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_weight="1"
+                        android:text="Bluetooth"
+                        android:textSize="13sp"
+                        app:icon="@drawable/ic_bluetooth"
+                        app:iconSize="16dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnModoEmisor"
+                        style="@style/Widget.CadenaDeFrio.Button.Outlined"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:text="Nodo Emisor"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <!-- Simulación e Historial -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSimular"
+                        style="@style/Widget.CadenaDeFrio.Button.Secondary"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_weight="1"
+                        android:text="Simular Datos"
+                        android:textSize="13sp"
+                        app:icon="@drawable/ic_simulation"
+                        app:iconSize="16dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnHistorial"
+                        style="@style/Widget.CadenaDeFrio.Button.Outlined"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:text="Ver Historial"
+                        android:textSize="13sp"
+                        app:icon="@drawable/ic_history"
+                        app:iconSize="16dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Tarjeta Hero de Telemetría Térmica -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardTemperatura"
+            style="@style/Widget.CadenaDeFrio.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:cardBackgroundColor="@color/temp_safe"
+            app:cardElevation="4dp"
+            app:contentPadding="20dp"
+            app:strokeColor="@color/temp_safe_stroke"
+            app:strokeWidth="1.5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:contentDescription="Temperatura"
+                        android:src="@drawable/ic_thermometer"
+                        app:tint="@color/text_white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:text="TEMPERATURA DE CÁMARA"
+                        android:textColor="@color/text_white"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvTemperatura"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="--.- °C"
+                    android:textColor="@color/text_white"
+                    android:textSize="50sp"
+                    android:textStyle="bold" />
+
+                <!-- Badge de Estado Térmico -->
+                <TextView
+                    android:id="@+id/tvEstadoTermico"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_pill"
+                    android:backgroundTint="#20FFFFFF"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="6dp"
+                    android:text="ESPERANDO MEDICIÓN"
+                    android:textColor="@color/text_white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Rango Operativo Seguro: 2.0 °C a 8.0 °C"
+                    android:textColor="#E0F2F1"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Tarjeta de Estado de Compuerta -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.CadenaDeFrio.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardElevation="2dp"
+            app:contentPadding="14dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:contentDescription="Compuerta"
+                    android:src="@drawable/ic_door"
+                    app:tint="@color/primary_navy" />
+
+                <TextView
+                    android:id="@+id/tvPuerta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_pill"
+                    android:backgroundTint="@color/door_closed_bg"
+                    android:paddingHorizontal="14dp"
+                    android:paddingVertical="10dp"
+                    android:text="COMPUERTA: CERRADA"
+                    android:textAlignment="center"
+                    android:textColor="@color/door_closed_text"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Tarjeta de Comandos Remotos OT -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.CadenaDeFrio.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTituloComandos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="Control Operativo Remoto"
+                    android:textColor="@color/primary_navy"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSilenciar"
+                    style="@style/Widget.CadenaDeFrio.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Silenciar Alarma Sonora (CMD:SILENCIO)"
+                    android:textSize="13sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnModoAuto"
+                    style="@style/Widget.CadenaDeFrio.Button.Outlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Restablecer Modo Auto (CMD:AUTO)"
+                    android:textSize="13sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnTest"
+                    style="@style/Widget.CadenaDeFrio.Button.Secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Prueba de Actuadores (CMD:TEST)"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<resources>
+    <!-- Nombre oficial de la aplicación -->
+    <string name="app_name">Cadena de Frío</string>
+
+    <!-- Módulo de Autenticación / Login -->
+    <string name="titulo_login">Cadena de Frío</string>
+    <string name="subtitulo_login">Sistema de Monitoreo Térmico OT (ISO 27400)</string>
+    <string name="hint_email">Correo institucional</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="btn_iniciar_sesion">Iniciar Sesión Segura</string>
+
+    <!-- Panel Principal / Dashboard -->
+    <string name="titulo_dashboard">Cadena de Frío</string>
+    <string name="subtitulo_dashboard">Monitoreo en Tiempo Real</string>
+
+    <!-- Historial y Emisor -->
+    <string name="titulo_historial">Historial de Cadena de Frío</string>
+    <string name="titulo_emisor">Nodo Emisor - Cadena de Frío</string>
+</resources>

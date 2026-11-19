@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.CadenaDeFrio.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="5dp"
+    app:cardElevation="1dp"
+    app:contentPadding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Indicador Visual Izquierdo de Temperatura -->
+        <TextView
+            android:id="@+id/tvItemTempBadge"
+            android:layout_width="68dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_pill"
+            android:backgroundTint="@color/temp_safe_bg"
+            android:gravity="center"
+            android:text="--.-°C"
+            android:textColor="@color/temp_safe"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Detalles del Registro -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvItemFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01/01/2026 00:00:00"
+                android:textColor="@color/text_title"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvItemDetalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Puerta: CERRADA | Estado: NORMAL"
+                android:textColor="@color/text_muted"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Pill de Estado Térmico -->
+        <TextView
+            android:id="@+id/tvItemEstadoPill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pill"
+            android:backgroundTint="@color/temp_safe_bg"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:text="NORMAL"
+            android:textColor="@color/temp_safe"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

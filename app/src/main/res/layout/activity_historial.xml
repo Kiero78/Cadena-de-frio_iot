@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Encabezado de Historial -->
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Widget.CadenaDeFrio.Card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        app:contentPadding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="Historial"
+                android:src="@drawable/ic_history" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titulo_historial"
+                    android:textColor="@color/primary_navy"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvContadorRegistros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Registros guardados: 0"
+                    android:textColor="@color/text_muted"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Barra de Acciones Operativas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnActualizar"
+            style="@style/Widget.CadenaDeFrio.Button"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="Actualizar"
+            android:textSize="12sp"
+            app:icon="@drawable/ic_refresh"
+            app:iconSize="14dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLimpiar"
+            style="@style/Widget.CadenaDeFrio.Button.Outlined"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="Limpiar"
+            android:textColor="@color/temp_critical"
+            android:textSize="12sp"
+            app:icon="@drawable/ic_delete"
+            app:iconSize="14dp"
+            app:iconTint="@color/temp_critical"
+            app:strokeColor="@color/temp_critical" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVolver"
+            style="@style/Widget.CadenaDeFrio.Button.Outlined"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="Volver"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Lista de Registros -->
+    <ListView
+        android:id="@+id/lvHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+</LinearLayout>

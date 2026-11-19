@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-merged_res-37:\\layout_activity_dashboard.xml.flat",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-merged_res-37:\\drawable_ic_wifi.xml.flat",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\drawable\\ic_wifi.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-merged_res-37:\\drawable_ic_cold_chain_logo.xml.flat",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\drawable\\ic_cold_chain_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-merged_res-37:\\drawable_ic_refresh.xml.flat",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\drawable\\ic_refresh.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-merged_res-37:\\layout_activity_historial.xml.flat",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\layout\\activity_historial.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-merged_res-37:\\drawable_ic_history.xml.flat",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\drawable\\ic_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-merged_res-37:\\drawable_ic_delete.xml.flat",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\drawable\\ic_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-merged_res-37:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-merged_res-37:\\drawable_bg_pill.xml.flat",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\drawable\\bg_pill.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-merged_res-37:\\layout_activity_nodo_emisor.xml.flat",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\layout\\activity_nodo_emisor.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-merged_res-37:\\drawable_ic_thermometer.xml.flat",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\drawable\\ic_thermometer.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-merged_res-37:\\drawable_ic_logout.xml.flat",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\drawable\\ic_logout.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-merged_res-37:\\drawable_ic_security.xml.flat",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\drawable\\ic_security.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-merged_res-37:\\drawable_ic_door.xml.flat",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\drawable\\ic_door.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-merged_res-37:\\drawable_ic_bluetooth.xml.flat",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\drawable\\ic_bluetooth.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-merged_res-37:\\drawable_ic_simulation.xml.flat",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\drawable\\ic_simulation.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-merged_res-37:\\layout_item_historial.xml.flat",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\layout\\item_historial.xml"
+    },
+    {
+        "merged": "cl.inacap.coldchainmonitor.app-merged_res-37:/layout_activity_login.xml.flat",
+        "source": "cl.inacap.coldchainmonitor.app-main-39:/layout/activity_login.xml"
+    }
+]

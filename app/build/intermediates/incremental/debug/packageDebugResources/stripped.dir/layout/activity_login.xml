@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Logotipo / Emblema Cadena de Frío -->
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_cold_chain_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/titulo_login"
+            android:textColor="@color/text_title"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/subtitulo_login"
+            android:textColor="@color/text_muted"
+            android:textSize="13sp" />
+
+        <!-- Tarjeta de Acceso Seguro OT -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.CadenaDeFrio.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Autenticación de Operador"
+                    android:textColor="@color/primary_navy"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Campo Correo -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilEmail"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_email"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusBottomStart="10dp"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:boxStrokeColor="@color/primary_blue"
+                    app:hintTextColor="@color/primary_blue"
+                    app:startIconDrawable="@drawable/ic_security"
+                    app:startIconTint="@color/primary_blue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="emailAddress"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/text_title"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Campo Contraseña -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilPassword"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:hint="@string/hint_password"
+                    app:boxCornerRadiusBottomEnd="10dp"
+                    app:boxCornerRadiusBottomStart="10dp"
+                    app:boxCornerRadiusTopEnd="10dp"
+                    app:boxCornerRadiusTopStart="10dp"
+                    app:boxStrokeColor="@color/primary_blue"
+                    app:endIconMode="password_toggle"
+                    app:hintTextColor="@color/primary_blue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="password"
+                        android:inputType="textPassword"
+                        android:textColor="@color/text_title"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Mensaje de Alerta / Bloqueo -->
+                <TextView
+                    android:id="@+id/tvAlertaLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/bg_pill"
+                    android:backgroundTint="@color/temp_critical_bg"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/temp_critical"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <!-- Botón de Inicio de Sesión -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLogin"
+                    style="@style/Widget.CadenaDeFrio.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/btn_iniciar_sesion"
+                    android:textColor="@color/text_white"
+                    android:textSize="15sp"
+                    app:icon="@drawable/ic_security"
+                    app:iconGravity="textStart"
+                    app:iconTint="@color/text_white" />
+
+                <!-- Botón de Desbloqueo por Gmail (visible solo cuando la cuenta se bloquea) -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDesbloquearGmail"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Desbloquear vía Gmail"
+                    android:textColor="@color/primary_blue"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:icon="@drawable/ic_security"
+                    app:iconGravity="textStart"
+                    app:iconTint="@color/primary_blue"
+                    app:strokeColor="@color/primary_blue" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

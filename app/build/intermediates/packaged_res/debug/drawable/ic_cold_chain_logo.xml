@@ -1,0 +1,47 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- Círculo exterior suave ártico -->
+    <path
+        android:fillColor="#E1F5FE"
+        android:pathData="M48,6A42,42 0 1,0 48,90A42,42 0 1,0 48,6Z" />
+    <!-- Escudo de Seguridad / Confiabilidad -->
+    <path
+        android:fillColor="#006699"
+        android:pathData="M48,16L24,26V46C24,61.4 34.2,75.6 48,80C61.8,75.6 72,61.4 72,46V26L48,16Z" />
+    <!-- Copo de Nieve / Frescura Térmica Interior -->
+    <!-- Eje vertical -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M46,30H50V62H46Z" />
+    <!-- Eje horizontal -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,44H64V48H32Z" />
+    <!-- Ramas diagonales -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M35.5,33.5L38.5,30.5L58.5,50.5L55.5,53.5Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M55.5,30.5L58.5,33.5L38.5,53.5L35.5,50.5Z" />
+    <!-- Ramificaciones del copo -->
+    <path
+        android:fillColor="#80DEEA"
+        android:pathData="M48,34L53,39L51,41L48,38L45,41L43,39Z" />
+    <path
+        android:fillColor="#80DEEA"
+        android:pathData="M48,58L43,53L45,51L48,54L51,51L53,53Z" />
+    <path
+        android:fillColor="#80DEEA"
+        android:pathData="M36,46L41,41L43,43L40,46L43,49L41,51Z" />
+    <path
+        android:fillColor="#80DEEA"
+        android:pathData="M60,46L55,51L53,49L56,46L53,43L55,41Z" />
+    <!-- Centro del copo -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M48,42A4,4 0 1,0 48,50A4,4 0 1,0 48,42Z" />
+</vector>

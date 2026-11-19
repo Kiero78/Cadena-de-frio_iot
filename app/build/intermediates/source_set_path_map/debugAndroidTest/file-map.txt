@@ -1,0 +1,4 @@
+cl.inacap.coldchainmonitor.test.app-androidTest-0 C:\Users\vicen\Downloads\ColdChainMonitor_v2\ColdChainMonitor_v2\app\build\generated\res\resValues\androidTest\debug
+cl.inacap.coldchainmonitor.test.app-mergeDebugAndroidTestResources-1 C:\Users\vicen\Downloads\ColdChainMonitor_v2\ColdChainMonitor_v2\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+cl.inacap.coldchainmonitor.test.app-mergeDebugAndroidTestResources-2 C:\Users\vicen\Downloads\ColdChainMonitor_v2\ColdChainMonitor_v2\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+cl.inacap.coldchainmonitor.test.app-merged_res-3 C:\Users\vicen\Downloads\ColdChainMonitor_v2\ColdChainMonitor_v2\app\build\intermediates\merged_res\debugAndroidTest

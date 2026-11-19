@@ -1,0 +1,59 @@
+<resources>
+    <!-- Tema Base Cadena de Frío: Confianza, Frescura y Claridad Operativa -->
+    <style name="Theme.CadenaDeFrio" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colores Primarios -->
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/primary_navy</item>
+        <item name="colorOnPrimary">@color/text_white</item>
+
+        <!-- Colores Secundarios -->
+        <item name="colorSecondary">@color/accent_cyan</item>
+        <item name="colorSecondaryVariant">@color/primary_blue</item>
+        <item name="colorOnSecondary">@color/text_white</item>
+
+        <!-- Fondo del sistema -->
+        <item name="android:windowBackground">@color/bg_app</item>
+        <item name="android:statusBarColor">@color/primary_navy</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Botones con diseño redondeado y moderno -->
+        <item name="materialButtonStyle">@style/Widget.CadenaDeFrio.Button</item>
+        <item name="materialCardViewStyle">@style/Widget.CadenaDeFrio.Card</item>
+    </style>
+
+    <style name="Widget.CadenaDeFrio.Button" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">10dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="backgroundTint">@color/primary_blue</item>
+    </style>
+
+    <style name="Widget.CadenaDeFrio.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="cornerRadius">10dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="strokeColor">@color/primary_blue</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="android:textColor">@color/primary_blue</item>
+    </style>
+
+    <style name="Widget.CadenaDeFrio.Button.Secondary" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">10dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="backgroundTint">@color/accent_cyan</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+    <style name="Widget.CadenaDeFrio.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">14dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="strokeColor">@color/card_stroke</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardBackgroundColor">@color/surface_white</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+</resources>

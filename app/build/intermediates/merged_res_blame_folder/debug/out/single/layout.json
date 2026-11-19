@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-mergeDebugResources-36:\\layout\\item_historial.xml",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\layout\\item_historial.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-mergeDebugResources-36:\\layout\\activity_dashboard.xml",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-mergeDebugResources-36:\\layout\\activity_historial.xml",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\layout\\activity_historial.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-mergeDebugResources-36:\\layout\\activity_nodo_emisor.xml",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\layout\\activity_nodo_emisor.xml"
+    },
+    {
+        "merged": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-mergeDebugResources-36:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\vicen\\.gradle\\daemon\\8.2\\cl.inacap.coldchainmonitor.app-main-39:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "cl.inacap.coldchainmonitor.app-mergeDebugResources-36:/layout/activity_login.xml",
+        "source": "cl.inacap.coldchainmonitor.app-main-39:/layout/activity_login.xml"
+    }
+]

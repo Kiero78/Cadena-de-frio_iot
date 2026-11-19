@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta Cadena de Frío: Confianza, Frescura y Claridad Operativa -->
+    <!-- Colores Primarios (Azul Ártico / Marino Profesional) -->
+    <color name="primary_navy">#0A3663</color>
+    <color name="primary_blue">#006699</color>
+    <color name="primary_light_frost">#E1F5FE</color>
+    <color name="accent_cyan">#00A8CC</color>
+    <color name="accent_ice">#80DEEA</color>
+
+    <!-- Fondos y Superficies -->
+    <color name="bg_app">#F4F8FA</color>
+    <color name="surface_white">#FFFFFF</color>
+    <color name="card_stroke">#DDE7EE</color>
+    <color name="divider_color">#E6EDF2</color>
+
+    <!-- Tipografía -->
+    <color name="text_title">#0E2033</color>
+    <color name="text_body">#2C3E50</color>
+    <color name="text_muted">#6B7C8E</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Estados Térmicos Operativos (Norma 2.0°C a 8.0°C) -->
+    <!-- Rango Seguro (Verde Menta / Teal Fresco) -->
+    <color name="temp_safe">#00796B</color>
+    <color name="temp_safe_dark">#004D40</color>
+    <color name="temp_safe_bg">#E0F2F1</color>
+    <color name="temp_safe_stroke">#80CBC4</color>
+
+    <!-- Alerta Congelamiento (< 2.0°C) (Azul Hielo / Frost) -->
+    <color name="temp_freeze">#0277BD</color>
+    <color name="temp_freeze_dark">#01579B</color>
+    <color name="temp_freeze_bg">#E1F5FE</color>
+    <color name="temp_freeze_stroke">#81D4FA</color>
+
+    <!-- Alerta Crítica Sobretemperatura (> 8.0°C) (Rojo Coral / Alarma) -->
+    <color name="temp_critical">#C62828</color>
+    <color name="temp_critical_dark">#B71C1C</color>
+    <color name="temp_critical_bg">#FFEBEE</color>
+    <color name="temp_critical_stroke">#EF9A9A</color>
+
+    <!-- Alerta Falla / Advertencia (Ámbar) -->
+    <color name="status_warning">#E65100</color>
+    <color name="status_warning_bg">#FFF3E0</color>
+
+    <!-- Estado de Compuerta -->
+    <color name="door_closed_text">#00796B</color>
+    <color name="door_closed_bg">#E0F2F1</color>
+    <color name="door_open_text">#C62828</color>
+    <color name="door_open_bg">#FFEBEE</color>
+
+    <!-- Consola / Log Terminal -->
+    <color name="terminal_bg">#131D2A</color>
+    <color name="terminal_text">#64FFDA</color>
+    <color name="terminal_muted">#8892B0</color>
+
+    <!-- Roles RBAC -->
+    <color name="role_supervisor">#6A1B9A</color>
+    <color name="role_supervisor_bg">#F3E5F5</color>
+    <color name="role_mantenedor">#E65100</color>
+    <color name="role_mantenedor_bg">#FFF3E0</color>
+    <color name="role_operador">#0277BD</color>
+    <color name="role_operador_bg">#E1F5FE</color>
+</resources>

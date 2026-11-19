@@ -1,0 +1,4 @@
+#Thu Nov 19 13:45:34 CLST 2026
+base.0=C\:\\Users\\vicen\\Downloads\\ColdChainMonitor_v2\\ColdChainMonitor_v2\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+path.0=0/classes.dex
+renamed.0=classes.dex
